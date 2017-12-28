@@ -1,4 +1,4 @@
-# CardBrokerApp
+# Team Select
 
 A simple Angular app that allows a user to manipulate items in a list.
 

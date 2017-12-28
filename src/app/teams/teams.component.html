@@ -1,0 +1,17 @@
+<main id="main" class="app-main">
+	<section class="app-main__title">
+		<div class="row">
+			<h2>NFL Football Teams</h2>
+		</div>
+	</section>
+	<section class="app-main__teams">
+		<mat-grid-list cols="4" rowHeight="100px">
+			<mat-grid-tile *ngFor="let team of teams" [class.active]="team.hide" (click)="toggle(team)">
+				{{team.name}}
+				<button (click)="delete(team)" mat-icon-button color="primary">
+					<mat-icon aria-label="Delete Team">close</mat-icon>
+				</button>
+			</mat-grid-tile>
+		</mat-grid-list>
+	</section>
+</main>
